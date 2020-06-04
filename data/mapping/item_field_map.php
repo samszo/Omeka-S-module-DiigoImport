@@ -11,7 +11,7 @@ return [
     'title'             => 'dcterms:title',
     'content'           => 'bibo:content',
     'isPartOf'          => 'dcterms:isPartOf',
-    'citation'          => 'dbpedia-owl:quotation',
+    'citation'          => 'cito:Citation',
     'user'              => 'cito:isCompiledBy',
     'isReferencedBy'    => 'dcterms:isReferencedBy',
     'semanticRelation'  => 'skos:semanticRelation',

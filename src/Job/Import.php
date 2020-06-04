@@ -37,7 +37,6 @@ class Import extends AbstractJob
         'foaf'          => 'http://xmlns.com/foaf/0.1/',
         'schema'        => 'http://schema.org/',        
         'oa'            => 'http://www.w3.org/ns/oa#',        
-        'dbpedia-owl'   => 'http://dbpedia.org/ontology/',        
         'cito'          => 'http://purl.org/spar/cito',        
     ];
 
@@ -443,19 +442,7 @@ o:is_public: 1
     public function ajouteImage(){
 
         //pour un mode avancé
-        $this->client->addCookie('gcc_cookie_id','3477d5c247e572cdc3aa7073b295cebc');
-        $this->client->addCookie('diigoandlogincookie','f1-.-luckysemiosis-.-20-.-0');
-        $this->client->addCookie('CHKIO','7e58e62b93c12022e31eb3df8fb691ce');
-        $this->client->addCookie('ditem_sort','updated');
-        $this->client->addCookie('_smasher_session','1e67c34d3e85ab13b2fdd1513f0b41a8');
-        $this->client->addCookie('outliner.sid','s%3A-dAe3XZThqsf1CSGjG8JeuwMP4EnZQGX.6gS1L6icv%2FiVxgs3RiwKM4PA2tKmm4DqGOy2IM5ZWto');
-        $this->client->addCookie('_ga','GA1.2.273677479.1539250002');
-        $this->client->addCookie('count','96');
-        $this->client->addCookie('_gid','GA1.2.1428775098.1547539861');
-        $this->client->addCookie('CACHE_TIP','true');
-        $this->client->addCookie('__utma','45878075.273677479.1539250002.1547623534.1547623534.1');
-        $this->client->addCookie('__utmc','45878075');
-        $this->client->addCookie('__utmz','45878075.1547623534.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none)');
+        //définir les cookies
 
 
         $url = "https://www.diigo.com/interact_api/load_user_items?order=update&type=image&page_num=3";

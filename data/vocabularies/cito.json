@@ -1,0 +1,11 @@
+{
+    "vocabulary": {
+        "o:namespace_uri": "http://purl.org/spar/cito",
+        "o:prefix": "cito",
+        "o:label": "The Citation Typing Ontology",
+        "o:comment": "The Citation Typing Ontology (CiTO) is an ontology that enables characterization of the nature or type of citations, both factually and rhetorically."
+    },
+    "strategy": "file",
+    "file": "cito.ttl",
+    "format": "turtle"
+}
