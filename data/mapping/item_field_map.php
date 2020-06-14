@@ -15,4 +15,8 @@ return [
     'user'              => 'cito:isCompiledBy',
     'isReferencedBy'    => 'dcterms:isReferencedBy',
     'semanticRelation'  => 'skos:semanticRelation',
+    'description'       => 'dcterms:description',
+    'color'             => 'schema:color',
+    'left'              => 'jdc:x',
+    'top'               => 'jdc:y',
 ];

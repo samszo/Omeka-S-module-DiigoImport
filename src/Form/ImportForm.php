@@ -116,6 +116,19 @@ class ImportForm extends Form
             ],
         ]);
 
+        $this->add([
+            'name' => 'what',
+            'type' => Element\Text::class,
+            'options' => [
+                'label' => 'What', // @translate
+                'info' => 'Specify a request.', // @translate
+            ],
+            'attributes' => [
+                'required' => false,
+                'id' => 'what-query',
+            ],
+        ]);
+
         $inputFilter = $this->getInputFilter();
 
         $inputFilter->add([
@@ -170,6 +183,15 @@ class ImportForm extends Form
             'required' => false,
             'filters' => [
                 ['name' => 'ToInt'],
+            ],
+        ]);
+
+        $inputFilter->add([
+            'name' => 'what',
+            'required' => false,
+            'filters' => [
+                ['name' => 'StringTrim'],
+                ['name' => 'Null'],
             ],
         ]);
 

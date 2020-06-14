@@ -51,6 +51,7 @@ class IndexController extends AbstractActionController
                     'numStart'      => $data['numStart'],
                     'version'       => 2,
                     'timestamp'     => $timestamp,
+                    'what'          => $data['what'],
                 ];
 
                 if ($args['apiKey'] && !$this->apiKeyIsValid($args)) {

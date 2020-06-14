@@ -2,3 +2,5 @@
 src/.DS_Store
 src/Api/.DS_Store
 .DS_Store
+data/ex.json
+src/Diigo/Cookies.php

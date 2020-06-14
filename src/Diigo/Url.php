@@ -8,6 +8,9 @@ class Url
      */
 	const URI = 'https://secure.diigo.com';
 	const API = '/api/v2/bookmarks';
+    const URIOUT = 'https://www.diigo.com/interact_api/load_user_items';
+    const URIWHAT = 'https://www.diigo.com/interact_api/search_user_items';
+    
 
     /**
      * @var string
@@ -40,6 +43,29 @@ class Url
     {
         return sprintf('%s%s?%s', self::URI, self::API, $this->getParams($params));
     }
+
+    /**
+     * The set of all items in the library via outliner
+     *
+     * @param array $params
+     * @return string
+     */
+    public function itemsOutliner(array $params = [])
+    {        
+        return sprintf('%s?%s', self::URIOUT, $this->getParams($params));
+    }
+
+    /**
+     * The set of items in the library via outliner corresponding to a what query
+     *
+     * @param array $params
+     * @return string
+     */
+    public function itemsOutlinerWhat(array $params = [])
+    {        
+        return sprintf('%s?%s', self::URIWHAT, $this->getParams($params));
+    }
+
 
     /**
      * The URL to an item file.

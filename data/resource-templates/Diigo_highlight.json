@@ -20,6 +20,30 @@
             "o:is_private": false,
             "data_type_name": null,
             "data_type_label": null,
+            "vocabulary_namespace_uri": "https:\/\/jardindesconnaissances.univ-paris8.fr\/onto\/",
+            "vocabulary_label": "Jardin des connaissances",
+            "local_name": "x",
+            "label": "x"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "https:\/\/jardindesconnaissances.univ-paris8.fr\/onto\/",
+            "vocabulary_label": "Jardin des connaissances",
+            "local_name": "y",
+            "label": "y"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
             "vocabulary_namespace_uri": "http:\/\/purl.org\/dc\/terms\/",
             "vocabulary_label": "Dublin Core",
             "local_name": "isPartOf",
@@ -45,7 +69,7 @@
             "data_type_name": null,
             "data_type_label": null,
             "vocabulary_namespace_uri": "http:\/\/purl.org\/spar\/cito",
-            "vocabulary_label": "the Citation Typing Ontology",
+            "vocabulary_label": "The Citation Typing Ontology",
             "local_name": "isCompiledBy",
             "label": "is compiled by"
         },
@@ -72,11 +96,23 @@
             "vocabulary_label": "Dublin Core",
             "local_name": "description",
             "label": "Description"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_type_name": null,
+            "data_type_label": null,
+            "vocabulary_namespace_uri": "http:\/\/schema.org\/",
+            "vocabulary_label": "Schema",
+            "local_name": "color",
+            "label": "color"
         }
     ],
     "o:resource_class": {
         "vocabulary_namespace_uri": "http:\/\/purl.org\/spar\/cito",
-        "vocabulary_label": "the Citation Typing Ontology",
+        "vocabulary_label": "The Citation Typing Ontology",
         "local_name": "Citation",
         "label": "citation"
     }

@@ -7,5 +7,8 @@ return [
     'concept'             => 'skos:Concept',
     'person'              => 'foaf:Person',    
     'annotation'          => 'oa:Annotation',
-    'citation'            => 'cito:Citation'
+    'citation'            => 'cito:Citation',
+    'actant'              => 'jdc:Actant',
+    'citation'            => 'cito:Citation',
+    'note'                => 'bibo:Note',
 ];

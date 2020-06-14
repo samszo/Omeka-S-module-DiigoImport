@@ -1,0 +1,11 @@
+{
+    "vocabulary": {
+        "o:namespace_uri": "https://jardindesconnaissances.univ-paris8.fr/onto/",
+        "o:prefix": "jdc",
+        "o:label": "Jardin des connaissances",
+        "o:comment": "Vocabulaire pour cultiver ses connaissances."
+    },
+    "strategy": "file",
+    "file": "jdc.ttl",
+    "format": "turtle"
+}
