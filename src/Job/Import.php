@@ -1047,8 +1047,8 @@ class Import extends AbstractJob
                 $pRef = $this->properties['dcterms']['isReferencedBy'];
                 //TODO:virer cette verrue  
                 $tempFiles[]=$tempFile->getTempPath();
-                $tempPath =  str_replace('/Users/samszo/Sites/','http://localhost/',$tempFile->getTempPath());
-                //$tempPath =  str_replace('/var/www/html/','http://192.168.20.223/',$tempFile->getTempPath());
+                //$tempPath =  str_replace('/Users/samszo/Sites/','http://localhost/',$tempFile->getTempPath());
+                $tempPath =  str_replace('/var/www/html/','http://192.168.20.223/',$tempFile->getTempPath());
                 $oItem['o:media'][] = [
                     'o:ingester' => 'url',
                     'o:source'   => $ima['download_url'],
