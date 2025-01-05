@@ -17,7 +17,7 @@ class Module extends AbstractModule
 {
     const NAMESPACE = __NAMESPACE__;
 
-    protected function preInstall()
+    protected function preInstall(): void
     {
         $services = $this->getServiceLocator();
 
@@ -32,7 +32,7 @@ class Module extends AbstractModule
         }
     }
 
-    protected function postUninstall()
+    protected function postUninstall(): void
     {
         $services = $this->getServiceLocator();
 

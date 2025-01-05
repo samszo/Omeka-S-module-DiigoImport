@@ -1041,14 +1041,15 @@ class Import extends AbstractJob
         foreach ($images as $ima) {
             $this->logger->info(__METHOD__." ".$ima['download_url']);        
             $tempFile = $this->download($ima['download_url'],$ima['id']);
-            if ($tempFile) {
+            $path_parts = pathinfo($tempFile->getTempPath());
+            if ($tempFile && $path_parts['extension']) {
                 //$this->logger->info(__METHOD__.' '.$tempFile->getTempPath());        
                 $pTitle = $this->properties['dcterms']['title'];
                 $pRef = $this->properties['dcterms']['isReferencedBy'];
                 //TODO:virer cette verrue  
                 $tempFiles[]=$tempFile->getTempPath();
-                //$tempPath =  str_replace('/Users/samszo/Sites/','http://localhost/',$tempFile->getTempPath());
-                $tempPath =  str_replace('/var/www/html/','http://192.168.20.223/',$tempFile->getTempPath());
+                $tempPath =  str_replace('/var/www/html/','http://localhost/',$tempFile->getTempPath());
+                //$tempPath =  str_replace('/var/www/html/','http://192.168.20.223/',$tempFile->getTempPath());
                 $oItem['o:media'][] = [
                     'o:ingester' => 'url',
                     'o:source'   => $ima['download_url'],
@@ -1059,10 +1060,10 @@ class Import extends AbstractJob
                             'property_id' => $pTitle->id(),
                             'type' => 'literal',
                         ],
-                    ],
+                    ],                    
                     $pRef->term() => [
                         [
-                            '@value' => $ref,
+                            '@value' => 'à définir',
                             'property_id' => $pRef->id(),
                             'type' => 'literal',
                         ],
